@@ -15,7 +15,7 @@ const server = app.listen( 7077 );
 const io =require( 'socket.io' ) ( server );
 
 io.on("connection", function (socket) {
-    console.log( "Someone connected!" );
+    console.log( "Someone just connected!" );
 
     console.log( socket.id );
     io.sockets.emit( 'connected', socket.id );
